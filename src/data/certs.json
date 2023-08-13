@@ -1,0 +1,16 @@
+{
+    "certs": [
+        {
+            "name": "Cisco Certified Network Associate",
+            "abbr": "CCNA",
+            "certNumber": "CSCO14289022",
+            "imageFile": "ccna_large.jpg"
+        },
+        {
+            "name": "Ekahau ECSE Design",
+            "abbr": "ECSE",
+            "certNumber": "D-5265",
+            "imageFile": "ecse.svg"
+        }
+    ]
+}
