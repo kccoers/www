@@ -1,16 +1,29 @@
 {
-    "certs": [
-        {
-            "name": "Cisco Certified Network Associate",
-            "abbr": "CCNA",
-            "certNumber": "CSCO14289022",
-            "imageFile": "ccna_large.jpg"
-        },
-        {
-            "name": "Ekahau ECSE Design",
-            "abbr": "ECSE",
-            "certNumber": "D-5265",
-            "imageFile": "ecse.svg"
-        }
-    ]
+    "certs": {
+        "networking": [
+            {
+                "name": "Cisco Certified Network Associate",
+                "abbr": "CCNA",
+                "certNumber": "CSCO14289022",
+                "imageFile": "ccna_large.jpg",
+                "hyperlink": "https://cp.certmetrics.com/cisco/en/public/transcript/a50b04d8a7f14db3a936823021a5bc56"
+            },
+            {
+                "name": "Ekahau ECSE Design",
+                "abbr": "ECSE",
+                "certNumber": "D-5265",
+                "imageFile": "ecse.svg",
+                "hyperlink": ""
+            }
+        ],
+        "cloud": [
+            {
+                "name": "Azure Fundamentals",
+                "abbr": "AZ-900",
+                "certNumber": "875E7115668A2A44",
+                "imageFile": "microsoft-fundamentals.svg",
+                "hyperlink": "https://learn.microsoft.com/en-us/users/kevincoers-5862/credentials/875e7115668a2a44"
+            }
+        ]
+    }
 }

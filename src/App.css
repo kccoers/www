@@ -81,12 +81,26 @@ nav .navLink:hover {
   color: #FFF;
 }
 
-.certsContainer {
+.certifications {
   position: relative;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   max-width: 80vw;
+}
+
+.certsCategory {
+  font-size: 2rem;
+  width: 100%;
+  text-align: left;
+  padding: 1rem;
+}
+
+.certifications .certsContainer:not(:last-child) {
+  border-bottom: solid 1px #FFF;
+}
+
+.certsContainer {
   display: flex;
   align-content: space-between;
   flex-direction: row;
