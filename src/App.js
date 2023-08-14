@@ -16,9 +16,11 @@ function App() {
     switch(location.pathname) {
       case '/astrophotography':
         $classes += " astrophotography"
+        break;
 
       default:
         $classes += ""
+        break;
     }
 
     return $classes;
