@@ -6,7 +6,7 @@ function Certs() {
     return(
         <>
         <div className='certifications'>
-            <div className='certsCategory'>Networking</div>
+            <h2>Networking</h2>
             <div className='certsContainer'>
             {certs.networking.map((cert) => {
                 const image = require(`../images/${cert.imageFile}`)
@@ -32,7 +32,7 @@ function Certs() {
             })}
             </div>
             <hr />
-            <div className='certsCategory'>Cloud</div>
+            <h2>Cloud</h2>
             <div className='certsContainer'>
             {certs.cloud.map((cert) => {
                 const image = require(`../images/${cert.imageFile}`)
