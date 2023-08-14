@@ -14,7 +14,7 @@ function Certs() {
                 return(
                     <div className='certCard'>
                         <div className='certCardImg'>
-                            <img src={image} />
+                            <img src={image} alt={cert.name} />
                         </div>
                         <div className='certCardInfo'>
                             <p className='header'>{cert.name} ({cert.abbr})</p>
@@ -40,7 +40,7 @@ function Certs() {
                 return(
                     <div className='certCard'>
                         <div className='certCardImg'>
-                            <img src={image} />
+                            <img src={image} alt={cert.name} />
                         </div>
                         <div className='certCardInfo'>
                             <p className='header'>{cert.name} ({cert.abbr})</p>
