@@ -81,6 +81,29 @@ nav .navLink:hover {
   color: #FFF;
 }
 
+.aboutContainer {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 80vw;
+}
+
+.aboutContainer h2 {
+  font-weight: 300;
+  width: 100%;
+  text-align: left;
+}
+
+.aboutContainer p {
+  text-align: justify;
+  margin-bottom: 1rem;
+}
+
+.aboutContainer hr {
+  margin: 1rem 0;
+}
+
 .certifications {
   position: relative;
   left: 50%;
@@ -96,16 +119,11 @@ nav .navLink:hover {
   padding: 1rem;
 }
 
-/*.certifications .certsContainer:not(:last-child) {
-  border-bottom: solid 1px #FFF;
-}*/
-
 .certsContainer {
   display: flex;
   align-content: space-between;
   flex-direction: row;
   flex-wrap: wrap;
-  /*justify-content: center;*/
   color: #000;
 }
 
