@@ -31,6 +31,7 @@ function Certs() {
                 )
             })}
             </div>
+            <hr />
             <div className='certsCategory'>Cloud</div>
             <div className='certsContainer'>
             {certs.cloud.map((cert) => {

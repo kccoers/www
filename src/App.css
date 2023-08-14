@@ -96,9 +96,9 @@ nav .navLink:hover {
   padding: 1rem;
 }
 
-.certifications .certsContainer:not(:last-child) {
+/*.certifications .certsContainer:not(:last-child) {
   border-bottom: solid 1px #FFF;
-}
+}*/
 
 .certsContainer {
   display: flex;
