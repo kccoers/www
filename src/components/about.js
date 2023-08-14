@@ -16,9 +16,6 @@ function About() {
                 Cisco Webex | Azure AD | Active Directory | Windows Server Administration | 
                 Linux Server Administration | Powershell | API
             </p>
-            <hr />
-            <h2>Hobbies</h2>
-
         </div>
     )
 }
