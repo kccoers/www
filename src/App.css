@@ -131,6 +131,7 @@ nav .navLink:hover {
 
 .certsContainer .certCard {
   min-width: 20rem;
+  max-width: calc(50% - 2rem);
   background-color: #FFF;
   border-radius: .25rem;
   margin: 1rem;
@@ -144,6 +145,15 @@ nav .navLink:hover {
 .certsContainer .certCard .certCardImg img { width: 4rem; display: inline-block; vertical-align: middle; }
 
 .certsContainer .certCard .certCardInfo { float: left; margin: 1rem; text-align: left; }
+
+.certsContainer .certCard .certCardInfo a {
+  color: #000;
+  transition: a .2s ease-in-out;
+}
+
+.certsContainer .certCard .certCardInfo a:hover {
+  color: #333;
+}
 
 .introCard {
   position: relative;

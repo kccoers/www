@@ -20,7 +20,7 @@ function Certs() {
                             <p className='header'>{cert.name} ({cert.abbr})</p>
                             { cert.hyperlink.length > 0 &&
                                 <p className='info'>
-                                    <a href={cert.hyperlink} target='blank'>{cert.certNumber}</a>
+                                    <a href={cert.hyperlink} target='blank' rel="noreferrer">{cert.certNumber}</a>
                                 </p>
                             }
                             { cert.hyperlink.length === 0 &&
@@ -46,7 +46,7 @@ function Certs() {
                             <p className='header'>{cert.name} ({cert.abbr})</p>
                             { cert.hyperlink.length > 0 &&
                                 <p className='info'>
-                                    <a href={cert.hyperlink} target='blank'>{cert.certNumber}</a>
+                                    <a href={cert.hyperlink} target='blank' rel="noreferrer">{cert.certNumber}</a>
                                 </p>
                             }
                             { cert.hyperlink.length === 0 &&
