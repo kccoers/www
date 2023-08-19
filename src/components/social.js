@@ -1,6 +1,6 @@
 function Social() {
     return(
-        <>Social</>
+        <></>
     )
 }
 
