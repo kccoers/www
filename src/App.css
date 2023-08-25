@@ -100,7 +100,7 @@ button:active {
 .flexbox {
     display: flex;
     align-content: center;
-    justify-content: start;
+    justify-content: flex-start;
     flex-wrap: wrap;
 }
 
