@@ -1,0 +1,20 @@
+{
+    "areas": [
+        { "area": "Solutions Architecture" },
+        { "area": "Network Architecture & Design" },
+        { "area": "Cisco Meraki Firewalls" },
+        { "area": "Cisco Meraki Switches" },
+        { "area": "Cisco Meraki Wireless" },
+        { "area": "Wireless Engineering" },
+        { "area": "Ekahau Wireless Design Tools" },
+        { "area": "Amazon Web Services" },
+        { "area": "Collaboration Tools" },
+        { "area": "Cisco Webex" },
+        { "area": "Azure AD" },
+        { "area": "Active Directory" },
+        { "area": "Windows Server Administration" },
+        { "area": "Linux Server Administration" },
+        { "area": "Powershell" },
+        { "area": "API" }
+    ]
+}

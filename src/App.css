@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
-body {
+html, body {
   font-size: 16px;
   color: #FFF;
   font-family: 'Roboto Condensed';
@@ -8,7 +8,6 @@ body {
 }
 
 .App {
-  text-align: center;
   background-image: url("/public/photos/background.jpg");
   background-size: cover;
   background-position: center;
@@ -17,186 +16,120 @@ body {
   width: 100vw;
   font-size: 16px;
   color: #FFF;
+  overflow-y: scroll;
 }
 
 .astrophotography { background-image: url("/public/photos/astroBackground.png") !important; }
 
 nav {
-  position: absolute;
-  top: 0;
-  width: 100vw;
-  height: 4rem;
-  display: flex;
-  align-content: center;
-  align-items: center;
-  flex-direction: row;
-  justify-content: center;
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    height: 4rem;
+    width: 100%;
+    vertical-align: middle;
+    box-sizing: border-box;
+    box-shadow: inset 0 0 0 1000px rgba(16,16,16,.95);
+    
 }
 
 nav a {
-  color: #FFF;
-  text-decoration: none;;
+    padding: 1rem;
+    color: #FFF;
+    text-decoration: none;
+    font-size: 1.5rem;
+    box-sizing: border-box;
+    border-bottom: solid 1px transparent;
+    transition: border-bottom .2s ease-in-out;
 }
 
-nav .navLink {
-  font-size: 1.5rem;
-  margin: 0;
-  padding: .5rem;
-  height: 100%;
-  box-sizing: border-box;
-  border-bottom: solid .25rem transparent;
-  transition: border-bottom .2s ease-in-out;
+nav a:hover { border-bottom: solid 1px #FFF; }
+
+button {
+    background-color: #484848;
+    color: #FFF;
+    font-size: 1rem;
+    border: none;
+    padding: 0.5rem;
+    font-family: 'Roboto Condensed';
+    border-radius: .5rem;
+    box-shadow: none;
+    -webkit-transition: box-shadow 100ms ease-in;
+    -moz-transition: box-shadow 100ms ease-in;
+    -o-transition: box-shadow 100ms ease-in;
+    transition: box-shadow 100ms ease-in;
 }
 
-nav .navLink:hover {
-  border-bottom: solid .25rem #FFF;
+button:hover {
+    box-shadow: 0 0.25rem 0.25rem 0 rgba(0, 0, 0, 0.26);
+    cursor: pointer;
 }
 
-.appContainer {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%);
-  top: 4rem;
-  height: calc(100vh - 4rem);
-  width: 100vw;
-  max-width: 120rem;
+button:active {
+    box-shadow: 0 0.5rem 0.25rem 0 rgba(0, 0, 0, 0.26);
 }
 
-.astroContainer {
-  position: relative;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+.appContainer .contentContainer {
+    max-width: 80rem;
+    height: calc(100vh - 4rem);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.astroContainer .astroCard {
-  min-width: 20rem;
-  max-width: 80rem;
-  background-color: #FFF;
-  border-radius: .25rem;
-  margin: 1rem;
-  box-sizing: border-box;
+.introCard { text-align: center; }
+
+.introCardMe {
+    width: 10rem;
+    border-radius: 10rem;
+    border-color: #FFF;
+    border-width: .25rem;
+    border-style: solid;
+}
+  
+.introCard .introCardIntro {
+    color: #FFF;
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 2rem;;
 }
 
-.astroContainer a {
-  color: #FFF;
+.flexbox {
+    display: flex;
+    align-content: center;
+    justify-content: start;
+    flex-wrap: wrap;
 }
 
-.aboutContainer {
-  position: relative;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 80vw;
-  max-width: 80rem;
+.flexbox .flexboxChild {
+    background-color: #FFF;
+    color: #000;
+    padding: .5rem 1rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    border-radius: .5rem;
+    text-transform: uppercase;
 }
 
-h2 {
-  font-weight: 300;
-  width: 100%;
-  text-align: left;
-}
-
-.aboutContainer p {
-  text-align: justify;
-  margin-bottom: 1rem;
-}
-
-.aboutContainer hr {
-  margin: 1rem 0;
-}
-
-.certifications {
-  position: relative;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 80vw;
-  max-width: 80rem;
-}
-
-.certsCategory {
-  font-size: 2rem;
-  width: 100%;
-  text-align: left;
-  padding: 1rem;
-}
+.certifications { width: 100%; }
+.certifications h2 { font-weight: 400;}
 
 .certsContainer {
-  display: flex;
-  align-content: space-between;
-  flex-direction: row;
-  flex-wrap: wrap;
-  color: #000;
+    display: flex;
+    align-content: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
 }
-
-.certsContainer > * { flex: 1; }
-
 .certsContainer .certCard {
-  min-width: 20rem;
-  background-color: #FFF;
-  border-radius: .25rem;
-  margin: 1rem;
-  box-sizing: border-box;
+    width: fit-content;
+    background-color: #FFF;
+    border-radius: .5rem;
+    margin-right: 1rem;
+    padding: 1.5rem;
+    color: #000;
+    box-sizing: border-box;
 }
-
-.certsContainer .certCard .certCardImg {
-  float: left;
-  margin: 1rem;
-}
-.certsContainer .certCard .certCardImg img { width: 4rem; display: inline-block; vertical-align: middle; }
-
-.certsContainer .certCard .certCardInfo { float: left; margin: 1rem; text-align: left; }
-
-.certsContainer .certCard .certCardInfo a {
-  color: #000;
-  transition: a .2s ease-in-out;
-}
-
-.certsContainer .certCard .certCardInfo a:hover {
-  color: #333;
-}
-
-.introCard {
-  position: relative;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.introCard .introCardMe {
-  width: 10rem;
-  border-radius: 10rem;
-  border-color: #FFF;
-  border-width: .25rem;
-  border-style: solid;
-}
-
-.introCard .introCardIntro {
-  color: #FFF;
-  margin: 1rem;
-  padding: 1rem;
-  font-size: 2rem;;
-}
-
-.labsContainer {
-  position: relative;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  max-width: 80rem;
-}
-
-@media only screen and (max-width: 600px) {
-  .certsContainer .certCard .certCardImg {
-    float: none;
-    margin: 1rem;
-  }
-}
-
-.clear { clear: both; }
-
-::selection {
-  color: #FFF;
-  background-color: #000;
-}
+.certCard .certCardImg img { display: block; width: 4rem; margin: 0 auto; }

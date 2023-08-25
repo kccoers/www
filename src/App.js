@@ -31,7 +31,9 @@ function App() {
     <>
     <div className={appContainerClasses(location)}>
       <Nav />
-      <AppContainer />
+      <div className='appContainer'>
+        <AppContainer />
+      </div>
     </div>
     </>
   );
