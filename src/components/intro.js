@@ -1,12 +1,11 @@
+import Image from 'react-bootstrap/Image'
+
 import me from '../images/me.jpg'
 
 function Intro() {
     return(
-        <div className='contentContainer'>
-            <div className='introCard'>
-                <img className='introCardMe' src={me} alt='Kevin Coers' />
-                <div className='introCardIntro'>Kevin Coers</div>
-            </div>
+        <div style={{textAlign:"center",margin:"0 auto"}}>
+            <Image style={{width:"10rem",border:".25rem solid #fff"}} src={me} roundedCircle />
         </div>
     )
 }

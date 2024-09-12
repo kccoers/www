@@ -1,3 +1,8 @@
+import * as React from 'react';
+import Button from 'react-bootstrap/Button'
+import Card from 'react-bootstrap/Card'
+import Container from 'react-bootstrap/Container'
+
 import certifications from '../data/certs.json'
 
 function Certs() {
@@ -8,60 +13,47 @@ function Certs() {
     }
 
     return(
-        <>
-        <div className='contentContainer'>
-            <div className='certifications'>
-                <h2>Networking Certifications</h2>
-                <div className='certsContainer'>
-                {certs.networking.map((cert) => {
-                    const image = require(`../images/${cert.imageFile}`)
+        <Container>
+            <h2>Networking Certifications</h2>
+            <div className='d-flex'>
+            {certs.networking.map((cert) => {
+                const image = require (`../images/${cert.imageFile}`)
 
-                    return(
-                        <div className='certCard'>
-                            <div className='certCardImg'>
-                                <img src={image} alt={cert.name} />
-                            </div>
-                            <div className='certCardInfo'>
-                                <p className='header'>{cert.name} ({cert.abbr})</p>
-                                { cert.hyperlink.length > 0 &&
-                                    <button onClick={() => {viewDigitalCert(cert.hyperlink)}}>DIGITAL CERTIFICATE</button>
-                                }
-                                { cert.hyperlink.length === 0 &&
-                                    <div>{cert.certNumber}</div>
-                                }
-                            </div>
-                        </div>
-                    )
-                })}
-                </div>
-                <hr style={{marginTop: '2rem'}} />
-                <h2>Cloud Certifications</h2>
-                <div className='certsContainer'>
-                {certs.cloud.map((cert) => {
-                    const image = require(`../images/${cert.imageFile}`)
+                return(
+                    <Card style={{flexDirection:"row",marginRight:"1rem"}}>
+                        <Card.Img variant='top' src={image} style={{display:'block',margin:'1rem',width:'4rem'}} />
+                        <Card.Body>
+                            <Card.Title style={{textAlign:"center"}}>{cert.name} ({cert.abbr})</Card.Title>
+                            { cert.hyperlink.length > 0 && <Button style={{margin:"0 auto"}} variant='outline-dark' href={cert.hyperlink} target="_blank">DIGITAL CERTIFICATE</Button> }
+                            { cert.hyperlink.length === 0 && <Card.Text>{cert.certNumber}</Card.Text> }
+                        </Card.Body>
+                    </Card>
+                )
 
-                    return(
-                        <div className='certCard'>
-                            <div className='certCardImg'>
-                                <img src={image} alt={cert.name} />
-                            </div>
-                            <div className='certCardInfo'>
-                                <p className='header'>{cert.name} ({cert.abbr})</p>
-                                { cert.hyperlink.length > 0 &&
-                                    <button onClick={() => {viewDigitalCert(cert.hyperlink)}}>DIGITAL CERTIFICATE</button>
-                                }
-                                { cert.hyperlink.length === 0 &&
-                                    <div>{cert.certNumber}</div>
-                                }
-                            </div>
-                        </div>
-                    )
-                })}
-                </div>
+            })}
             </div>
-        </div>
-        </>
+            <hr />
+            <h2>Cloud Certifications</h2>
+            <div className='d-flex'>
+            {certs.cloud.map((cert) => {
+                const image = require (`../images/${cert.imageFile}`)
+
+                return(
+                    <Card style={{flexDirection:"row",marginRight:"1rem"}}>
+                        <Card.Img variant='top' src={image} style={{display:'block',margin:'1rem',width:'4rem'}} />
+                        <Card.Body>
+                            <Card.Title style={{textAlign:"center"}}>{cert.name} ({cert.abbr})</Card.Title>
+                            { cert.hyperlink.length > 0 && <Button variant='outline-dark' href={cert.hyperlink} target="_blank">DIGITAL CERTIFICATE</Button> }
+                            { cert.hyperlink.length === 0 && <Card.Text>{cert.certNumber}</Card.Text> }
+                        </Card.Body>
+                    </Card>
+                )
+
+            })}
+            </div>
+        </Container>
     )
+
 }
 
 export default Certs;

@@ -7,6 +7,7 @@ import Intro from './intro';
 import About from './about';
 import Certs from './certs';
 import Labs from './labs';
+import Portfolio from './portfolio';
 import Astrophotography from './astrophotography';
 
 function AppContainer() {
@@ -17,6 +18,7 @@ function AppContainer() {
                 <Route path="about" element={<About />} />
                 <Route path="certs" element={<Certs />} />
                 <Route path="labs" element={<Labs />} />
+                <Route path="portfolio" element={<Portfolio />} />
                 <Route path="astrophotography" element={<Astrophotography />} />
             </Routes>
         </div>

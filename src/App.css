@@ -3,7 +3,7 @@
 html, body {
   font-size: 16px;
   color: #FFF;
-  font-family: 'Roboto Condensed';
+  font-family: 'Roboto Condensed' !important;
   font-weight: 400;
 }
 
@@ -19,9 +19,17 @@ html, body {
   overflow-y: scroll;
 }
 
+.appContainer {
+    width: 80vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
 .astrophotography { background-image: url("/public/photos/astroBackground.png") !important; }
 
-nav {
+/*nav {
     position: fixed;
     display: flex;
     flex-wrap: wrap;
@@ -45,9 +53,9 @@ nav a {
     transition: border-bottom .2s ease-in-out;
 }
 
-nav a:hover { border-bottom: solid 1px #FFF; }
+nav a:hover { border-bottom: solid 1px #FFF; }*/
 
-button {
+/*button {
     background-color: #484848;
     color: #FFF;
     font-size: 1rem;
@@ -132,4 +140,4 @@ button:active {
     color: #000;
     box-sizing: border-box;
 }
-.certCard .certCardImg img { display: block; width: 4rem; margin: 0 auto; }
+.certCard .certCardImg img { display: block; width: 4rem; margin: 0 auto; }*/

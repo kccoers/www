@@ -2,7 +2,7 @@ import { useLocation } from 'react-router';
 
 import './App.css';
 
-import Nav from './components/nav';
+import Navigation from './components/nav';
 import AppContainer from './components/appContainer';
 
 function App() {
@@ -30,10 +30,8 @@ function App() {
   return (
     <>
     <div className={appContainerClasses(location)}>
-      <Nav />
-      <div className='appContainer'>
-        <AppContainer />
-      </div>
+      <Navigation />
+      <AppContainer />
     </div>
     </>
   );
