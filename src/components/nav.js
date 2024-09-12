@@ -4,7 +4,11 @@ import Navbar from 'react-bootstrap/Navbar';
 
 function Navigation() {
     return(
-        <Navbar expand='lg' className='bg-body-tertiary' data-bs-theme="dark">
+        <Navbar
+            expand='lg'
+            className='bg-body-tertiary'
+            data-bs-theme="dark"
+            style={{position:"sticky",top:"0",zIndex:"1"}}>
             <Container>
                 <Navbar.Brand href="/">Kevin Coers</Navbar.Brand>
                 <Navbar.Toggle aria-controls='basic-navbar-nav' />
