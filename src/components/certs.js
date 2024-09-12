@@ -8,10 +8,6 @@ import certifications from '../data/certs.json'
 function Certs() {
     const certs = certifications.certs;
 
-    function viewDigitalCert(link) {
-        window.open(link, '_blank');
-    }
-
     return(
         <Container>
             <h2>Networking Certifications</h2>
