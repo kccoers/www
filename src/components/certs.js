@@ -11,15 +11,15 @@ function Certs() {
     return(
         <Container>
             <h2>Networking Certifications</h2>
-            <div className='d-flex'>
+            <div className='d-flex flex-column flex-lg-row'>
             {certs.networking.map((cert) => {
                 const image = require (`../images/${cert.imageFile}`)
 
                 return(
-                    <Card style={{flexDirection:"row",marginRight:"1rem"}}>
+                    <Card style={{flexDirection:"row",marginRight:"1rem",marginBottom:"1rem"}}>
                         <Card.Img variant='top' src={image} style={{display:'block',margin:'1rem',width:'4rem'}} />
                         <Card.Body>
-                            <Card.Title style={{textAlign:"center"}}>{cert.name} ({cert.abbr})</Card.Title>
+                            <Card.Title>{cert.name} ({cert.abbr})</Card.Title>
                             { cert.hyperlink.length > 0 && <Button style={{margin:"0 auto"}} variant='outline-dark' href={cert.hyperlink} target="_blank">DIGITAL CERTIFICATE</Button> }
                             { cert.hyperlink.length === 0 && <Card.Text>{cert.certNumber}</Card.Text> }
                         </Card.Body>
@@ -30,15 +30,15 @@ function Certs() {
             </div>
             <hr />
             <h2>Cloud Certifications</h2>
-            <div className='d-flex'>
+            <div className='d-flex flex-column flex-lg-row'>
             {certs.cloud.map((cert) => {
                 const image = require (`../images/${cert.imageFile}`)
 
                 return(
-                    <Card style={{flexDirection:"row",marginRight:"1rem"}}>
+                    <Card style={{flexDirection:"row",marginRight:"1rem",marginBottom:"1rem"}}>
                         <Card.Img variant='top' src={image} style={{display:'block',margin:'1rem',width:'4rem'}} />
                         <Card.Body>
-                            <Card.Title style={{textAlign:"center"}}>{cert.name} ({cert.abbr})</Card.Title>
+                            <Card.Title>{cert.name} ({cert.abbr})</Card.Title>
                             { cert.hyperlink.length > 0 && <Button variant='outline-dark' href={cert.hyperlink} target="_blank">DIGITAL CERTIFICATE</Button> }
                             { cert.hyperlink.length === 0 && <Card.Text>{cert.certNumber}</Card.Text> }
                         </Card.Body>
