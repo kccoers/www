@@ -1,26 +1,60 @@
-import Badge from 'react-bootstrap/Badge'
-import Container from 'react-bootstrap/Container'
+import { Accordion,
+         Badge,
+         Container,
+         Stack
+} from 'react-bootstrap';
 
+import about from '../data/about.json'
 import areasOfExpertise from '../data/areasOfExperise.json'
 
 function About() {
     const areas = areasOfExpertise.areas;
 
+    const jobs = about.jobs;
+
     return(
-        <Container>
-            <h2 style={{fontWeight: '400'}}>Professional</h2>
-            <p style={{fontSize:"1.5rem"}}>Technical Solutions Architect with over 10 years of experience 
-               and a strong affinity towards providing solutions and products 
-               based on business needs, return on investment, scalability, 
-               and technical debt elimination. Proven success in strategically 
-               aligning IT Solutions and products with IT and Business Operations.</p>
-            <hr />    
-            <h2 style={{fontWeight: '400'}}>Areas of Expertise</h2>
-            {areas.map((expertise) => {
+        <Container style={{marginTop:"1rem"}}>
+            <p style={{fontSize:"1.5rem"}}>{about.professional}</p>
+            <hr></hr>
+            <Accordion>
+            {jobs.map((job, i) => {
                 return(
-                    <Badge bg="light" text="dark" style={{fontSize:"1rem",marginRight:".5rem",marginBottom:".5rem"}}>{expertise.area}</Badge>
+                    <Accordion.Item eventKey={i}>
+                        { (job.endDateMonth == "current" || job.endDateYear == "current") &&
+                            <Accordion.Header>{job.title}<br></br>{job.company} - {job.startDateMonth} {job.startDateYear} - Current</Accordion.Header>
+                        }
+                        { (job.endDateMonth != "current" || job.endDateYear != "current") &&
+                            <Accordion.Header>{job.title}<br></br>{job.company} - {job.startDateMonth} {job.startDateYear} - {job.endDateMonth} {job.endDateYear}</Accordion.Header>
+                        }
+                        <Accordion.Body>
+                            {job.descriptions.map((description, i) => {
+                                return(
+                                    <>
+                                    <h6>{description.vertical} - {description.subVertical}</h6>
+                                    <p>{description.description}</p>
+                                    { description.descriptors.length > 0 &&
+                                        <ul>
+                                        {description.descriptors.map((descriptor) => {
+                                            return(
+                                                <li style={{fontSize:"1rem"}}>{descriptor}</li>
+                                            )
+                                        })}
+                                        </ul>
+                                    }
+                                    <hr></hr>
+                                    </>
+                                )
+                            })}
+                            {job.skills.map((skill) => {
+                                return(
+                                    <Badge bg="light" text="dark" style={{marginRight:".5rem",marginBottom:".5rem"}}>{skill}</Badge>
+                                )
+                            })}
+                        </Accordion.Body>
+                    </Accordion.Item>
                 )
             })}
+            </Accordion>
         </Container>
     )
 

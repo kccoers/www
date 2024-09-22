@@ -20,7 +20,7 @@ function Certs() {
                         <Card.Img variant='top' src={image} style={{display:'block',margin:'1rem',width:'4rem'}} />
                         <Card.Body>
                             <Card.Title>{cert.name} ({cert.abbr})</Card.Title>
-                            { cert.hyperlink.length > 0 && <Button style={{margin:"0 auto"}} variant='outline-dark' href={cert.hyperlink} target="_blank">DIGITAL CERTIFICATE</Button> }
+                            { cert.hyperlink.length > 0 && <Button style={{margin:"0 auto"}} variant='outline-light' href={cert.hyperlink} target="_blank">DIGITAL CERTIFICATE</Button> }
                             { cert.hyperlink.length === 0 && <Card.Text>{cert.certNumber}</Card.Text> }
                         </Card.Body>
                     </Card>
@@ -39,7 +39,7 @@ function Certs() {
                         <Card.Img variant='top' src={image} style={{display:'block',margin:'1rem',width:'4rem'}} />
                         <Card.Body>
                             <Card.Title>{cert.name} ({cert.abbr})</Card.Title>
-                            { cert.hyperlink.length > 0 && <Button variant='outline-dark' href={cert.hyperlink} target="_blank">DIGITAL CERTIFICATE</Button> }
+                            { cert.hyperlink.length > 0 && <Button variant='outline-light' href={cert.hyperlink} target="_blank">DIGITAL CERTIFICATE</Button> }
                             { cert.hyperlink.length === 0 && <Card.Text>{cert.certNumber}</Card.Text> }
                         </Card.Body>
                     </Card>

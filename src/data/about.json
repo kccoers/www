@@ -1,0 +1,264 @@
+{
+    "professional": "Solutions Architect with over 10 years of experience and a strong affinity towards providing solutions and products based on business needs, return on investment, scalability, and technical debt elimination. Proven success in strategically aligning IT Solutions and products with IT and Business Operations in the areas of networking, cloud, and collaboration.",
+    "jobs": [
+        {
+            "company": "Omni Logistics, LLC",
+            "location": "Dallas/Fort Worth, TX",
+            "startDateMonth": "February",
+            "startDateYear": "2018",
+            "endDateMonth": "current",
+            "endDateYear": "current",
+            "title": "Infrastructure Architect",
+            "descriptions": [
+                {
+                    "vertical": "Cloud",
+                    "subVertical": "AWS",
+                    "description": "Design and maintain various aspects of the AWS environment to enable ",
+                    "descriptors": [
+                        ""
+                    ]
+                },
+                {
+                    "vertical": "Networking",
+                    "subVertical": "LAN/WAN",
+                    "description": "Responsible for network design and architecture for all facilities, site-to-site connectivity, and cloud (AWS) connectivity.",
+                    "descriptors": [
+                        "Implementation of more robust switching infrastructure to include core and distribution layers for campus and large facilities to utilize L3.",
+                        "Implementation of AMP (Advanced Malware Protection)",
+                        "Implementation of IDS/IPS",
+                        "Globally Managed 15+ Cisco Meraki vMX endpoints (AWS and Azure)",
+                        "Globally Managed 200+ Cisco Meraki Firewalls (standalone and HA)",
+                        "Globally Managed 40+ Core/Distribution switches (all redundant utilizing stacking)",
+                        "Globally Managed 200+ Cisco Meraki Access switches",
+                        "Globally Managed 750+ Cisco Meraki Wireless Access Points"
+                    ]
+                },
+                {
+                    "vertical": "Networking",
+                    "subVertical": "Wireless",
+                    "description": "Responsible for wireless design for facilities and warehouses to ensure current and future network capacity expectations remove operational roadblocks.",
+                    "descriptors": [
+                        "Implementation of 802.1x utilizing Windows NPS for private wireless authentication",
+                        "Implementation of Captive Portal with Guest Ambassadors for wireless guest accesss",
+                        "Utilize Ekahau AI Pro to create wireless predictives",
+                        "Utilize Ekahau AI Pro to assess wireless performance based on capacity expectations (current and future)",
+                        "Utilize Ekahau AI Pro to optimize channel planning and recommended disabling of radios as well as channel width reocmmendations",
+                        "Utilize Ekahau AI Pro to optimize WAP placement",
+                        "Utilize Ekahau AI Pro to visualize different antenna types (omni directional and directional) to aid in both performance and cost optimization"
+                    ]
+                },
+                {
+                    "vertical": "Networking",
+                    "subVertical": "Remote Access",
+                    "description": "Responsible for design of new remote access solutions (Cisco AnyConnect) for enhanced security and manageability.",
+                    "descriptors": [
+                        "Global deployment and multi-region enablement (North America, Asisa Pacific, Latin America)",
+                        "Integration with AWS using Route53 (DNS traffic policies with DNS load balancing)",
+                        "Integration with AWS Transit Gateways for access to [datacenter] services",
+                        "Integration with Entra ID for SAML authentication"
+                    ]
+                },
+                {
+                    "vertical": "Networking",
+                    "subVertical": "Automation",
+                    "description": "Responsible for design of automation practices pertaining to the Cisco Meraki network environment",
+                    "descriptors": [
+                        "Implemntation of GitHub repository for Network Engineers to store and update scripts",
+                        "PowerShell utilized for cross-platform enablement of simple tasks (i.e. Route Table lookups)",
+                        "Meraki Action Batches utilized for better performance and streamlined API calls",
+                        "AWS Lamdba with PowerShell Core utilized for network report and audit automation"
+                    ]
+                }
+            ],
+            "skills": [
+                "AWS",
+                "AWS Transit Gateways",
+                "AWS Lambda",
+                "AWS CLI",
+                "AWS Route53",
+                "VRRP",
+                "Cisco Meraki Firewalls",
+                "eBGP",
+                "VPN",
+                "Cisco Meraki Switches",
+                "OSPF",
+                "LACP",
+                "CDP",
+                "LLDP",
+                "Flexible Stacking",
+                "Cisco Meraki Wireless Access Points",
+                "802.1x",
+                "Captive Portal",
+                "Ekahau AI Pro",
+                "Channel Planning and Optimization",
+                "Wireshark",
+                "PowerShell"
+            ]
+        },
+        {
+            "company": "C&R Information Technology Services",
+            "location": "Houston, TX",
+            "startDateMonth": "August",
+            "startDateYear": "2014",
+            "endDateMonth": "February",
+            "endDateYear": "2017",
+            "title": "Founder",
+            "descriptions": [
+                {
+                    "vertical": "Business",
+                    "subVertical": "Founder",
+                    "description": "Provided cost-effective MSP services for small-to-medium sized businesses.",
+                    "descriptors": [
+                        "Patching of desktops, servers, infrastructure devices",
+                        "Management of Windows and Linux based servers",
+                        "Management of Office365 and Azure AD/Entra ID Envirionments",
+                        "Maintaining of Active Directory deployments",
+                        "Provided secure remote access to internal resources"
+                    ]
+                }
+            ],
+            "skills": [
+                "Windows Server",
+                "Linux",
+                "M365",
+                "Azure AD",
+                "Entra ID",
+                "Exchange Online",
+                "Active Directory",
+                "VPN"
+            ]
+        },
+        {
+            "company": "SOURCE Web Solutions",
+            "location": "Friendswood, TX",
+            "startDateMonth": "October",
+            "startDateYear": "2013",
+            "endDateMonth": "May",
+            "endDateYear": "2014",
+            "title": "PHP Developer",
+            "descriptions": [
+                {
+                    "vertical": "Development",
+                    "subVertical": "PHP",
+                    "description": "Worked as a member of the development team to ensure that data-driven web applications were delivered to clients.",
+                    "descriptors": [
+                        "LAMP stack deveolopment",
+                        "SVN management",
+                        "Git management",
+                        "Linux server management"
+                    ]
+                }
+            ],
+            "skills": [
+                "Linux",
+                "Apache",
+                "MySQL",
+                "PHP",
+                "JavaScript",
+                "jQuery",
+                "CSS",
+                "SVN",
+                "Git"
+            ]
+        },
+        {
+            "company": "Club Systems",
+            "location": "Sugar Land, TX",
+            "startDateMonth": "June",
+            "startDateYear": "2013",
+            "endDateMonth": "October",
+            "endDateYear": "2013",
+            "title": "PCI Compliance, PHP Developer",
+            "descriptions": [
+                {
+                    "vertical": "Development",
+                    "subVertical": "Security",
+                    "description": "Contracted by Club Systems to aid in development of member portal and address new PCI Level 1 Compliance requirements",
+                    "descriptors": [
+                        "LAMP stack deveolopment",
+                        "Vulnerability scanning of hosted web application environment",
+                        "SVN management"
+                    ]
+                }
+            ],
+            "skills": [
+                "Linux",
+                "Apache",
+                "MySQL",
+                "PHP",
+                "JavaScript",
+                "jQuery",
+                "CSS",
+                "SVN",
+                "Vulnerability Scanning"
+            ]
+        },
+        {
+            "company": "Southern Global Safety Services (SGSS)",
+            "location": "Alvin, TX",
+            "startDateMonth": "July",
+            "startDateYear": "2012",
+            "endDateMonth": "May",
+            "endDateYear": "2013",
+            "title": "IT Manager",
+            "descriptions": [
+                {
+                    "vertical": "Information Technology",
+                    "subVertical": "Management",
+                    "description": "Managed day to day IT operations",
+                    "descriptors": [
+                        "Implementation of Active Directory",
+                        "Management of Windows and Linux based servers",
+                        "Management of networking infrastructure",
+                        "Email administration",
+                        "Built sales portal for business to keep track of engagements"
+                    ]
+                }
+            ],
+            "skills": [
+                "Active Directory",
+                "Windows Server",
+                "Linux",
+                "Networking",
+                "Apache",
+                "MySQL",
+                "PHP",
+                "JavaScript",
+                "jQuery",
+                "CSS"
+            ]
+        },
+        {
+            "company": "Club Systems",
+            "location": "Sugar Land, TX",
+            "startDateMonth": "June",
+            "startDateYear": "2011",
+            "endDateMonth": "July",
+            "endDateYear": "2012",
+            "title": "Technical Support Representative",
+            "descriptions": [
+                {
+                    "vertical": "Support",
+                    "subVertical": "End Users",
+                    "description": "Assist customers with operation of Club Systems portals.",
+                    "descriptors": [
+                        "Support hardware needed to run custom portals (receipt printers, signature pads, etc...)",
+                        "Support various IT needs of internal Club Systems personnel",
+                        "Built an internal call tracking system to enhance customer service for technical and billing agents"
+                    ]
+                }
+            ],
+            "skills": [
+                "Linux",
+                "Networking",
+                "Apache",
+                "MySQL",
+                "PHP",
+                "JavaScript",
+                "jQuery",
+                "CSS"
+            ]
+        }
+    ],
+    "skills": []
+}

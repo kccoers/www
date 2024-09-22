@@ -18,6 +18,10 @@ function App() {
         $classes += " astrophotography"
         break;
 
+      case '/about':
+        $classes += " about"
+        break;
+
       default:
         $classes += ""
         break;

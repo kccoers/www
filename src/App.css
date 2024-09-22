@@ -19,6 +19,8 @@ html, body {
   overflow-y: scroll;
 }
 
+.about > .appContainer { display: block !important; }
+
 .appContainer {
     width: 80vw;
     min-height: 100vh;
@@ -28,116 +30,3 @@ html, body {
 }
 
 .astrophotography { background-image: url("/public/photos/astroBackground.png") !important; }
-
-/*nav {
-    position: fixed;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    height: 4rem;
-    width: 100%;
-    vertical-align: middle;
-    box-sizing: border-box;
-    box-shadow: inset 0 0 0 1000px rgba(16,16,16,.95);
-    
-}
-
-nav a {
-    padding: 1rem;
-    color: #FFF;
-    text-decoration: none;
-    font-size: 1.5rem;
-    box-sizing: border-box;
-    border-bottom: solid 1px transparent;
-    transition: border-bottom .2s ease-in-out;
-}
-
-nav a:hover { border-bottom: solid 1px #FFF; }*/
-
-/*button {
-    background-color: #484848;
-    color: #FFF;
-    font-size: 1rem;
-    border: none;
-    padding: 0.5rem;
-    font-family: 'Roboto Condensed';
-    border-radius: .5rem;
-    box-shadow: none;
-    -webkit-transition: box-shadow 100ms ease-in;
-    -moz-transition: box-shadow 100ms ease-in;
-    -o-transition: box-shadow 100ms ease-in;
-    transition: box-shadow 100ms ease-in;
-}
-
-button:hover {
-    box-shadow: 0 0.25rem 0.25rem 0 rgba(0, 0, 0, 0.26);
-    cursor: pointer;
-}
-
-button:active {
-    box-shadow: 0 0.5rem 0.25rem 0 rgba(0, 0, 0, 0.26);
-}
-
-.appContainer .contentContainer {
-    max-width: 80rem;
-    height: calc(100vh - 4rem);
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.introCard { text-align: center; }
-
-.introCardMe {
-    width: 10rem;
-    border-radius: 10rem;
-    border-color: #FFF;
-    border-width: .25rem;
-    border-style: solid;
-}
-  
-.introCard .introCardIntro {
-    color: #FFF;
-    margin: 1rem;
-    padding: 1rem;
-    font-size: 2rem;;
-}
-
-.flexbox {
-    display: flex;
-    align-content: center;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-}
-
-.flexbox .flexboxChild {
-    background-color: #FFF;
-    color: #000;
-    padding: .5rem 1rem;
-    margin-bottom: 1rem;
-    margin-right: 1rem;
-    border-radius: .5rem;
-    text-transform: uppercase;
-}
-
-.certifications { width: 100%; }
-.certifications h2 { font-weight: 400;}
-
-.certsContainer {
-    display: flex;
-    align-content: center;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-}
-.certsContainer .certCard {
-    width: fit-content;
-    background-color: #FFF;
-    border-radius: .5rem;
-    margin-right: 1rem;
-    padding: 1.5rem;
-    color: #000;
-    box-sizing: border-box;
-}
-.certCard .certCardImg img { display: block; width: 4rem; margin: 0 auto; }*/
