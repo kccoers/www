@@ -1,15 +1,11 @@
 import { Accordion,
          Badge,
-         Container,
-         Stack
+         Container
 } from 'react-bootstrap';
 
 import about from '../data/about.json'
-import areasOfExpertise from '../data/areasOfExperise.json'
 
 function About() {
-    const areas = areasOfExpertise.areas;
-
     const jobs = about.jobs;
 
     return(
@@ -20,10 +16,10 @@ function About() {
             {jobs.map((job, i) => {
                 return(
                     <Accordion.Item eventKey={i}>
-                        { (job.endDateMonth == "current" || job.endDateYear == "current") &&
+                        { (job.endDateMonth === "current" || job.endDateYear === "current") &&
                             <Accordion.Header>{job.title}<br></br>{job.company} - {job.startDateMonth} {job.startDateYear} - Current</Accordion.Header>
                         }
-                        { (job.endDateMonth != "current" || job.endDateYear != "current") &&
+                        { (job.endDateMonth !== "current" || job.endDateYear !== "current") &&
                             <Accordion.Header>{job.title}<br></br>{job.company} - {job.startDateMonth} {job.startDateYear} - {job.endDateMonth} {job.endDateYear}</Accordion.Header>
                         }
                         <Accordion.Body>
