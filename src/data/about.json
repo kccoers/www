@@ -15,7 +15,10 @@
                     "subVertical": "AWS",
                     "description": "Design and maintain various aspects of the AWS environment to enable ",
                     "descriptors": [
-                        ""
+                        "Implementation of scalable and repeatable design for centralized services in each region",
+                        "Utilization of AWS Transit Gateways for network core, inter-region, and inter-account network connectivity",
+                        "Extended network connectivity from cloud to on-prem utilizing AWS Transit Gateways and Cisco Meraki vMX's",
+                        "Utilization of AWS CLI to aggregate information across all accounts"
                     ]
                 },
                 {
