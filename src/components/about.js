@@ -41,6 +41,7 @@ function About() {
                                     </>
                                 )
                             })}
+                            <h6>Skills Utilized</h6>
                             {job.skills.map((skill) => {
                                 return(
                                     <Badge bg="light" text="dark" style={{marginRight:".5rem",marginBottom:".5rem"}}>{skill}</Badge>
