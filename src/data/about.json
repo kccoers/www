@@ -33,7 +33,8 @@
                         "Globally Managed 200+ Cisco Meraki Firewalls (standalone and HA)",
                         "Globally Managed 40+ Core/Distribution switches (all redundant utilizing stacking)",
                         "Globally Managed 200+ Cisco Meraki Access switches",
-                        "Globally Managed 750+ Cisco Meraki Wireless Access Points"
+                        "Globally Managed 750+ Cisco Meraki Wireless Access Points",
+                        "Globally Managed 100+ Cisco Meraki Teleworker Devices"
                     ]
                 },
                 {
