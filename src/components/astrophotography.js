@@ -5,20 +5,20 @@ import { Carousel,
 } from 'react-bootstrap';
 
 function Astrophotography() {
-    const [albums, setAlbums] = useState([]);
+    const [albums, setData] = useState([]);
 
-    const fetchAlbumData = () => {
-        fetch('https://kccoers.github.io/astrophotography/data.json')
+    const fetchData = () => {
+        fetch('https://kccoers.github.io/www-data/data.json')
             .then(response => {
                 return response.json();
             })
             .then(data => {
-                setAlbums(data);
+                setData(data[0].astrophotography);
             });
     }
 
     useEffect(() => {
-        fetchAlbumData()
+        fetchData()
     }, [])
 
     return(
