@@ -336,7 +336,7 @@ export default function About() {
                         }`}
                       >
                         <div className="px-6 pb-6 border-t border-slate-700 pt-6">
-                          {hasDetailedSections ? (
+                          {hasDetailedSections && (
                             <div className="space-y-6">
                               {job.sections.map((section, sIndex) => (
                                 <div key={sIndex}>
@@ -350,14 +350,16 @@ export default function About() {
                                   <p className="text-slate-300 mb-3 ml-4">{section.description}</p>
                                   
                                   {/* Responsibilities */}
-                                  <ul className="space-y-2 ml-4 mb-3">
-                                    {section.responsibilities.map((resp, rIndex) => (
-                                      <li key={rIndex} className="text-slate-400 text-sm flex items-start">
-                                        <span className="text-cyan-400 mr-2 mt-1">•</span>
-                                        <span>{resp}</span>
-                                      </li>
-                                    ))}
-                                  </ul>
+                                  {section.responsibilities.length > 0 && (
+                                    <ul className="space-y-2 ml-4 mb-3">
+                                      {section.responsibilities.map((resp, rIndex) => (
+                                        <li key={rIndex} className="text-slate-400 text-sm flex items-start">
+                                          <span className="text-cyan-400 mr-2 mt-1">•</span>
+                                          <span>{resp}</span>
+                                        </li>
+                                      ))}
+                                    </ul>
+                                  )}
                                   
                                   {/* Technologies Used */}
                                   {section.technologies && section.technologies.length > 0 && (
@@ -378,8 +380,6 @@ export default function About() {
                                 </div>
                               ))}
                             </div>
-                          ) : (
-                            <p className="text-slate-400">{job.summary}</p>
                           )}
                         </div>
                       </div>
